@@ -25,7 +25,7 @@ pipelines:
 
     - step:
         deployment: PROD
-        name: Deploy to all prod servers
+        name: Deploy to main database-web server
         trigger: manual
         image: node:12.1.0
         script:
