@@ -18,7 +18,7 @@ pipelines:
             variables:
               USER: $SFTP_USER
               SERVER: $SFTP_HOST
-              REMOTE_PATH: '/var/www/www.onriot.net/test'
+              REMOTE_PATH: '/var/www/dev.onriot.net'
               LOCAL_PATH: 'build/*'
               DEBUG: 'true'
 
@@ -34,6 +34,6 @@ pipelines:
             variables:
               USER: $SFTP_USER
               SERVER: $SFTP_HOST
-              REMOTE_PATH: '/var/www/www.onriot.net/prod'
+              REMOTE_PATH: '/var/www/www.onriot.net'
               LOCAL_PATH: 'build/*'
               DEBUG: 'true'
