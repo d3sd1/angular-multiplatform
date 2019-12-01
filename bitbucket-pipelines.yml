@@ -3,12 +3,37 @@
 # Only use spaces to indent your .yml configuration.
 # -----
 # You can specify a custom docker image from Docker Hub as your build environment.
-image: maven:3.6.1
+image: node:11.15.0
 
 pipelines:
   default:
     - step:
-        caches:
-          - maven
-        script: # Modify the commands below to build your repository.
-          - mvn -B verify # -B batch mode makes Maven less verbose
+        deployment: TEST
+        name: Deploy to test
+        image: atlassian/default-image:2
+        script:
+          - "npm install --quiet"
+          - "ng build --configuration=test"
+          - pipe: atlassian/sftp-deploy:0.5.2
+            variables:
+              USER: $SFTP_USER
+              SERVER: $SFTP_HOST
+              REMOTE_PATH: '/var/www/www.onriot.net/test'
+              LOCAL_PATH: 'build/*'
+              DEBUG: 'true'
+
+    - step:
+        deployment: PROD
+        name: Deploy to all prod servers
+        trigger: manual
+        image: atlassian/default-image:2
+        script:
+          - "npm install --quiet"
+          - "ng build --configuration=production"
+          - pipe: atlassian/sftp-deploy:0.5.2
+            variables:
+              USER: $SFTP_USER
+              SERVER: $SFTP_HOST
+              REMOTE_PATH: '/var/www/www.onriot.net/prod'
+              LOCAL_PATH: 'build/*'
+              DEBUG: 'true'
