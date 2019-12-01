@@ -20,12 +20,12 @@ pipelines:
               USER: $SFTP_USER
               SERVER: $SFTP_HOST
               REMOTE_PATH: '/var/www/test.onriot.net'
-              LOCAL_PATH: 'build/*'
+              LOCAL_PATH: 'dist/*'
               DEBUG: 'true'
 
     - step:
         deployment: PROD
-        name: Deploy to main database-web server
+        name: Deploy to main srv
         trigger: manual
         image: node:12.1.0
         script:
@@ -39,5 +39,5 @@ pipelines:
               USER: $SFTP_USER
               SERVER: $SFTP_HOST
               REMOTE_PATH: '/var/www/www.onriot.net'
-              LOCAL_PATH: 'build/*'
+              LOCAL_PATH: 'dist/*'
               DEBUG: 'true'
