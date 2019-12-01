@@ -12,6 +12,7 @@ pipelines:
         name: Deploy to test
         image: atlassian/default-image:2
         script:
+          - "npm install -g @angular/cli"
           - "npm install --quiet"
           - "ng build --configuration=test"
           - pipe: atlassian/sftp-deploy:0.5.2
@@ -28,6 +29,7 @@ pipelines:
         trigger: manual
         image: atlassian/default-image:2
         script:
+          - "npm install -g @angular/cli"
           - "npm install --quiet"
           - "ng build --configuration=production"
           - pipe: atlassian/sftp-deploy:0.5.2
