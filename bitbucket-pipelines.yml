@@ -12,6 +12,8 @@ pipelines:
         name: Deploy to test
         image: atlassian/default-image:2
         script:
+          - "npm config set user 0"
+          - "npm config set unsafe-perm true"
           - "npm install -g @angular/cli"
           - "npm install --quiet"
           - "ng build --configuration=test"
@@ -29,6 +31,8 @@ pipelines:
         trigger: manual
         image: atlassian/default-image:2
         script:
+          - "npm config set user 0"
+          - "npm config set unsafe-perm true"
           - "npm install -g @angular/cli"
           - "npm install --quiet"
           - "ng build --configuration=production"
