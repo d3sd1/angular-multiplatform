@@ -19,7 +19,7 @@ pipelines:
             variables:
               USER: $SFTP_USER
               SERVER: $SFTP_HOST
-              REMOTE_PATH: '/var/www/dev.onriot.net'
+              REMOTE_PATH: '/var/www/test.onriot.net'
               LOCAL_PATH: 'build/*'
               DEBUG: 'true'
 
