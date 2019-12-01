@@ -3,14 +3,12 @@
 # Only use spaces to indent your .yml configuration.
 # -----
 # You can specify a custom docker image from Docker Hub as your build environment.
-image: node:11.15.0
-
 pipelines:
   default:
     - step:
         deployment: TEST
         name: Deploy to test
-        image: atlassian/default-image:2
+        image: node:12.1.0
         script:
           - "npm config set user 0"
           - "npm config set unsafe-perm true"
@@ -29,7 +27,7 @@ pipelines:
         deployment: PROD
         name: Deploy to all prod servers
         trigger: manual
-        image: atlassian/default-image:2
+        image: node:12.1.0
         script:
           - "npm config set user 0"
           - "npm config set unsafe-perm true"
