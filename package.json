@@ -1,13 +1,16 @@
 {
-  "name": "OnLOL",
+  "name": "com.onriot.app",
+  "displayName": "OnRiot",
   "version": "1.0.0",
-  "description": "Angular 8 with Electron (Typescript + SASS + Hot Reload)",
-  "homepage": "https://github.com/maximegris/angular-electron",
+  "description": "OnRiot - All you need for Riot Games.",
+  "homepage": "https://www.onriot.net",
   "author": {
-    "name": "Maxime GRIS",
-    "email": "maxime.gris@gmail.com"
+    "name": "Andrei García Cuadra",
+    "email": "andreigarciacuadra@gmail.com"
   },
+  "license": "Apache-2.0",
   "keywords": [
+    "ecosystem:cordova",
     "angular",
     "angular 8",
     "electron",
@@ -24,14 +27,25 @@
     "desktop:build:linux": "npm run desktop:kernel:compile:prod && electron-builder build --linux",
     "desktop:build:windows": "npm run desktop:kernel:compile:prod && electron-builder build --windows",
     "desktop:build:mac": "npm run desktop:kernel:compile:prod && electron-builder build --mac",
+    "mobile:build:ios": "npm run web:kernel:compile:prod && cordova build ios",
+    "mobile:build:android": "npm run web:kernel:compile:prod && cordova build android",
     "desktop:kernel:serve-tsc": "tsc -p tsconfig-serve.json",
     "desktop:kernel:compile:prod": "npm run electron:serve-tsc && ng build -- -c production",
+    "web:kernel:compile:prod": "ng build --configuration=production --aot=true --prod --buildOptimizer=true --optimization=true --outputPath=www",
     "postinstall": "electron-builder install-app-deps",
     "e2e": "npm run build:prod && mocha --timeout 300000 --require ts-node/register e2e/**/*.spec.ts",
     "version": "conventional-changelog -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md",
     "lint": "ng lint"
   },
+  "dependencies": {
+    "@ngxs/store": "3.6.0",
+    "@ngxs/websocket-plugin": "3.6.0",
+    "cordova-android": "^8.1.0",
+    "cordova-ios": "^5.1.1",
+    "cordova-plugin-device": "2.0.3"
+  },
   "devDependencies": {
+    "cordova-plugin-whitelist": "^1.3.4",
     "@angular-builders/custom-webpack": "8.2.0",
     "@angular-devkit/build-angular": "0.803.6",
     "@angular-eslint/builder": "0.0.1-alpha.17",
@@ -81,5 +95,15 @@
   },
   "engines": {
     "node": ">=10.9.0"
+  },
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-whitelist": {},
+      "cordova-plugin-device": {}
+    },
+    "platforms": [
+      "ios",
+      "android"
+    ]
   }
 }
