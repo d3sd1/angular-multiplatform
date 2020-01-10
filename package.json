@@ -34,7 +34,7 @@
     "mobile:build:ios": "npm run web:kernel:compile:prod && cordova build ios",
     "mobile:build:android": "npm run web:kernel:compile:prod && cordova build android",
     "desktop:kernel:serve-tsc": "tsc -p tsconfig-serve.json",
-    "desktop:kernel:compile:prod": "npm run desktop:kernel:serve-tsc && ng build -- -c production",
+    "desktop:kernel:compile:prod": "npm run desktop:kernel:serve-tsc && ng build --configuration=production",
     "web:kernel:compile:prod": "ng build --configuration=production --aot=true --prod --buildOptimizer=true --optimization=true --outputPath=www",
     "postinstall": "electron-builder install-app-deps",
     "e2e": "npm run web:kernel:compile:prod && npm run desktop:kernel:compile:prod && mocha --timeout 300000 --require ts-node/register e2e/**/*.spec.ts",
