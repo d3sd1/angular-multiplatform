@@ -3,9 +3,9 @@ import { ElectronService } from './core/services';
 import { TranslateService } from '@ngx-translate/core';
 import { AppConfig } from '../environments/environment';
 import * as Stomp from 'stompjs';
-import * as SockJS from 'sockjs-client'
+import * as SockJS from 'sockjs-client';
 
-declare var device; // Cordova inhered var.
+declare let device; // Cordova inhered var.
 
 
 @Component({
@@ -38,8 +38,8 @@ export class AppComponent implements OnInit {
     }, false);
 
     /* Configuring WebSocket on Client Side */
-    var socket = new SockJS('http://localhost:9032/ws');
-    var stompClient;
+    const socket = new SockJS('http://localhost:9032/ws');
+    let stompClient;
     stompClient = Stomp.over(socket);
     stompClient.connect({}, function(frame) {
       stompClient.subscribe('/test_ws_endpoint', function(temperature) {
