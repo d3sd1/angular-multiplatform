@@ -9,6 +9,8 @@
 [![Documentation Status](https://readthedocs.org/projects/angular-multiplatform/badge/?version=latest)](https://readthedocs.org/projects/angular-multiplatform/badge/?version=latest)
 [![Github all releases](https://img.shields.io/github/downloads/Naereen/StrapDown.js/total.svg)](https://GitHub.com/Naereen/StrapDown.js/releases/)
 [![Github downloads](https://github-basic-badges.herokuapp.com/downloads/d3sd1/angular-multiplatform/total.svg)](https://github.com/d3sd1/angular-multiplaftorm/)
+[![Github Stars](https://img.shields.io/github/stars/d3sd1/angular-multiplatform.svg?style=social)](https://github.com/d3sd1/angular-multiplatform/stargazers)
+[![Github Watchers](https://img.shields.io/github/watchers/d3sd1/angular-multiplatform.svg?style=social)](https://github.com/d3sd1/angular-multiplatform/watchers)
 
 
 # Introduction
@@ -39,17 +41,3 @@ You can check all the documentation on our official Read The Docs:
 
 ## Contributors and copyrights
 This project forked [MaximeGris Angular-Electron](https://github.com/maximegris/angular-electron) for Windows/MacOS compile.
-
-
-[build-badge]: https://travis-ci.org/maximegris/angular-electron.svg?branch=master
-[build]: https://travis-ci.org/maximegris/angular-electron
-[license-badge]: https://img.shields.io/badge/license-Apache2-blue.svg?style=flat
-[license]: https://github.com/maximegris/angular-electron/blob/master/LICENSE.md
-[prs-badge]: https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square
-[prs]: http://makeapullrequest.com
-[github-watch-badge]: https://img.shields.io/github/watchers/maximegris/angular-electron.svg?style=social
-[github-watch]: https://github.com/maximegris/angular-electron/watchers
-[github-star-badge]: https://img.shields.io/github/stars/maximegris/angular-electron.svg?style=social
-[github-star]: https://github.com/maximegris/angular-electron/stargazers
-[twitter]: https://twitter.com/intent/tweet?text=Check%20out%20angular-electron!%20https://github.com/maximegris/angular-electron%20%F0%9F%91%8D
-[twitter-badge]: https://img.shields.io/twitter/url/https/github.com/maximegris/angular-electron.svg?style=social
