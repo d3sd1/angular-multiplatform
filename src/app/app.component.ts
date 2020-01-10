@@ -2,6 +2,8 @@ import {Component, OnInit} from '@angular/core';
 import { ElectronService } from './core/services';
 import { TranslateService } from '@ngx-translate/core';
 import { AppConfig } from '../environments/environment';
+import * as Stomp from 'stompjs';
+import * as SockJS from 'sockjs-client'
 
 declare var device; // Cordova inhered var.
 
@@ -30,9 +32,19 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    // Used for IOS/Android (I guess)
     document.addEventListener("deviceready", function() {
       alert(device.platform);
     }, false);
-  }
 
+    /* Configuring WebSocket on Client Side */
+    var socket = new SockJS('http://localhost:9032/ws');
+    var stompClient;
+    stompClient = Stomp.over(socket);
+    stompClient.connect({}, function(frame) {
+      stompClient.subscribe('/test_ws_endpoint', function(temperature) {
+        console.log("ws resp: ", temperature);
+      });
+    });
+  }
 }
