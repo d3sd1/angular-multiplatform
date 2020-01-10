@@ -3,11 +3,5 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Angular-MultiPlatform's documentation!
+Windows
 =================================================
-
-.. toctree::
-   :maxdepth: 2
-   :caption: Contents:
-
-   builds/build.rst

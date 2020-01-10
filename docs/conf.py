@@ -67,7 +67,7 @@ exclude_patterns = [u'_build', 'Thumbs.db', '.DS_Store']
 # The name of the Pygments (syntax highlighting) style to use.
 pygments_style = None
 
-collapse_navigation = false
+collapse_navigation = False
 
 # -- Options for HTML output -------------------------------------------------
 
