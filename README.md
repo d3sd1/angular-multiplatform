@@ -2,9 +2,7 @@
 [![Electron Logo](https://www.vectorlogo.zone/logos/electronjs/electronjs-icon.svg)](https://electronjs.org/)
 [![Cordova Logo](https://www.vectorlogo.zone/logos/apache_cordova/apache_cordova-icon.svg)](https://cordova.apache.org/)
 
-[![Travis build](https://travis-ci.org/d3sd1/angular-multiplatform.svg?branch=dev)]
-[![Make a pull request][prs-badge]][prs]
-[![License](http://img.shields.io/badge/Licence-MIT-brightgreen.svg)](LICENSE.md)
+[![Travis build](https://travis-ci.org/d3sd1/angular-multiplatform.svg?branch=dev)](https://travis-ci.org/d3sd1/angular-multiplatform)
 
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/d3sd1/angular-multiplatform/commits/dev)
 [![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://GitHub.com/Naereen/ama)
