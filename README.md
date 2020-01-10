@@ -4,9 +4,12 @@
 [![Make a pull request][prs-badge]][prs]
 [![License](http://img.shields.io/badge/Licence-MIT-brightgreen.svg)](LICENSE.md)
 
-[![Watch on GitHub][github-watch-badge]][github-watch]
-[![Star on GitHub][github-star-badge]][github-star]
-[![Tweet][twitter-badge]][twitter]
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/d3sd1/angular-multiplatform/commits/dev)
+[![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://GitHub.com/Naereen/ama)
+[![Documentation Status](https://readthedocs.org/projects/angular-multiplatform/badge/?version=latest)](https://readthedocs.org/projects/angular-multiplatform/badge/?version=latest)
+[![Github all releases](https://img.shields.io/github/downloads/Naereen/StrapDown.js/total.svg)](https://GitHub.com/Naereen/StrapDown.js/releases/)
+[![Github downloads](https://github-basic-badges.herokuapp.com/downloads/d3sd1/angular-multiplatform/total.svg)](https://github.com/d3sd1/angular-multiplaftorm/)
+
 
 # Introduction
 
