@@ -1,11 +1,11 @@
 {
-  "name": "com.onriot.app",
-  "displayName": "OnRiot",
+  "name": "com.d3sd1.angular.multiplaform",
+  "displayName": "Angular Multiplaform",
   "version": "1.0.0",
-  "description": "OnRiot - All you need for Riot Games.",
-  "homepage": "https://www.onriot.net",
+  "description": "Build angular for web, iOS, Android, Windows, MacOS and Linux.",
+  "homepage": "https://www.andreigarciacuadra.es",
   "author": {
-    "name": "Andrei García Cuadra",
+    "name": "d3sd1",
     "email": "andreigarciacuadra@gmail.com"
   },
   "license": "Apache-2.0",
@@ -17,7 +17,11 @@
     "typescript",
     "eslint",
     "spectron",
-    "sass"
+    "sass",
+    "ios",
+    "windows",
+    "play-store",
+    "app-store"
   ],
   "main": "main.js",
   "private": true,

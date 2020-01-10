@@ -1,4 +1,4 @@
-[![Angular Logo](https://www.vectorlogo.zone/logos/angular/angular-icon.svg)](https://angular.io/) [![Electron Logo](https://www.vectorlogo.zone/logos/electronjs/electronjs-icon.svg)](https://electronjs.org/)
+[![Angular Logo](https://www.vectorlogo.zone/logos/angular/angular-icon.svg)](https://angular.io/) [![Electron Logo](https://www.vectorlogo.zone/logos/electronjs/electronjs-icon.svg)](https://electronjs.org/) [![NativeScript Logo](https://www.nativescript.org/images/default-source/logos/nativescript-logo.png?sfvrsn=2)](https://www.nativescript.org/)
 
 [![Travis Build Status][build-badge]][build]
 [![Make a pull request][prs-badge]][prs]
