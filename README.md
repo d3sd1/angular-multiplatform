@@ -35,7 +35,7 @@ IMPORTANT: Angular 8.x CLI needs Node 10.9 or later to works correctly.
 You can check all the documentation on our official Read The Docs:
 [Read The Docs Angular-Multiplaform](https://angular-multiplatform.readthedocs.io/en/latest/)
 
-## Pending work
+## Pending work / to-do features / known bugs
 There is no pending work!!! 🎉🎉🎉🎉🎉🎉
 
 
