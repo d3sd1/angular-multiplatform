@@ -3,5 +3,67 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Windows
+*****
+Build From MacOS
+*****
+This tutorial is intended only for MacOS host users (users that run this code on Windows, but they want apps for the world!).
+
+
+Common steps
 =================================================
+* You must have installed npm as a global command (with node). You must follow this `website tutorial <https://nodejs.org/es/download/>`_ if you run **node -v** on a terminal
+and there's no command found.
+* You ran **npm i** on the project root.
+
+
+Local test for desktop apps
+***********
+The app will run the same independent from the operating system.
+You can test it with:
+**npm run desktop:dev**
+
+
+Build from MacOS for Windows
+***********
+Run the command:
+**npm run desktop:build:windows**
+You will get two types of compilation:
+* Packed: .exe file. Ready for distribute. You can get it in the folder ./release.
+* Unpacked: Binaries, with all libraries and the .exe. You can get it inside ./release/win-unpacked
+
+
+
+Build from MacOS for Linux
+***********
+
+WIP
+**npm run desktop:build:linux**
+
+There is an electron error with dial connect. As soon as they fix it, I will update this docs.
+
+
+Build from Windows for MacOS
+***********
+WIP
+
+You can't natively. You have to run it on a MacOS virtual machine nor a pc with MacOS as host operating system, due to
+Apple restrictions.
+
+
+Build from Windows for iOS
+***********
+
+WIP
+
+
+Build from Windows for Android
+***********
+
+WIP
+Prerequisites:
+* Cordova installed. You can do it executing **npm install -g cordova && cordova telemetry on**. If you type **cordova --version** it should throw the version.
+* Java installed (and added to path). You can install it with chocolatey(more info about `chocolatey openjdk <https://chocolatey.org/packages/openjdk>`_): **choco install openjdk**.
+*
+* If you just ran above commands, please, restart terminal nor IDE.
+
+**npm run desktop:build:android**
