@@ -10,7 +10,6 @@
 [![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://GitHub.com/Naereen/ama)
 [![Documentation Status](https://readthedocs.org/projects/angular-multiplatform/badge/?version=latest)](https://readthedocs.org/projects/angular-multiplatform/badge/?version=latest)
 [![Github all releases](https://img.shields.io/github/downloads/Naereen/StrapDown.js/total.svg)](https://GitHub.com/Naereen/StrapDown.js/releases/)
-[![Github downloads](https://github-basic-badges.herokuapp.com/downloads/d3sd1/angular-multiplatform/total.svg)](https://github.com/d3sd1/angular-multiplaftorm/)
 [![Github Stars](https://img.shields.io/github/stars/d3sd1/angular-multiplatform.svg?style=social)](https://github.com/d3sd1/angular-multiplatform/stargazers)
 [![Github Watchers](https://img.shields.io/github/watchers/d3sd1/angular-multiplatform.svg?style=social)](https://github.com/d3sd1/angular-multiplatform/watchers)
 
