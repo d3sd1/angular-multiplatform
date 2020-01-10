@@ -1,20 +1,18 @@
-.. Angular-MultiPlatform documentation master file, created by
-   sphinx-quickstart on Fri Jan 10 18:10:56 2020.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+# Multiplatform Angular
 
-Welcome to Angular-MultiPlatform's documentation!
-=================================================
+Hi! It's d3sd1, project owner.
+This project is based on the procedure write-once-compile-everywhere.
+So, with one source code, you can compile it (for almost) any platform, including:
 
-.. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+* Windows (x64 nor x32).
+* MacOS.
+* Linux (x64 nor x32).
+* iOS.
+* Android (x64 nor x32).
+
+You can also build it from any host operating system, taking care about restrictions (detailed on every tutorial).
 
 
+# Contributing
 
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+Feel free to do your own pull requests to the project.
