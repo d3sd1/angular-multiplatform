@@ -12,6 +12,7 @@ src/**/*.js
 *.js.map
 /www
 /release
+/plugins
 
 # dependencies
 /node_modules

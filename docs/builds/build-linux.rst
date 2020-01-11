@@ -5,5 +5,4 @@
 
 Linux
 =================================================
-
-WIP
+There's still no documentation here. Please, collaborate by doing this page nor requesting it!
