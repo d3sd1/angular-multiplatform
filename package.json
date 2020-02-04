@@ -30,14 +30,16 @@
     "desktop:dev": "wait-on http-get://localhost:4200/ && npm run desktop:kernel:serve-tsc && electron . --serve",
     "desktop:build:linux": "npm run desktop:kernel:compile:prod && electron-builder build --linux",
     "desktop:build:windows": "npm run desktop:kernel:compile:prod && electron-builder build --windows",
-    "desktop:build:mac": "npm run desktop:kernel:compile:prod && electron-builder build --mac",
+    "desktop:build:mac": "npm run desktop:kernel:compile:prod && CSC_IDENTITY_AUTO_DISCOVERY=false electron-builder build --mac",
     "mobile:build:ios": "npm run web:kernel:compile:prod && cordova build ios",
     "mobile:build:android": "npm run web:kernel:compile:prod && cordova build android",
+    "store:build:android": "npm run web:kernel:compile:prod && cordova build --release android",
+    "store:build:ios": "npm run web:kernel:compile:prod && cordova build --release ios",
     "desktop:kernel:serve-tsc": "tsc -p tsconfig-serve.json",
-    "desktop:kernel:compile:prod": "npm run electron:serve-tsc && ng build -- -c production",
+    "desktop:kernel:compile:prod": "npm run desktop:kernel:serve-tsc && ng build --configuration=production",
     "web:kernel:compile:prod": "ng build --configuration=production --aot=true --prod --buildOptimizer=true --optimization=true --outputPath=www",
     "postinstall": "electron-builder install-app-deps",
-    "e2e": "npm run build:prod && mocha --timeout 300000 --require ts-node/register e2e/**/*.spec.ts",
+    "e2e": "npm run web:kernel:compile:prod && npm run desktop:kernel:compile:prod && mocha --timeout 300000 --require ts-node/register e2e/**/*.spec.ts",
     "version": "conventional-changelog -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md",
     "lint": "ng lint"
   },
@@ -107,5 +109,6 @@
       "ios",
       "android"
     ]
-  }
+  },
+  "icon": null
 }
