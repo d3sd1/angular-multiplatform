@@ -11,33 +11,14 @@
 
 
 # Introduction
-
-Bootstrap and package your project with Angular 8, Electron (Typescript + SASS + Hot Reload) and NativeScript for creating Desktop applications.
-
-Currently runs with:
-
-- Angular 8 (targeting v9 for future releases.)
-- Electron 7 (no updates expected yet)
-- Electron Builder 21
-- Cordova 
-
-With this sample, you can :
-
-- Run your app in a local development environment with Electron & Hot reload
-- Run your app in a production environment
-- Package your app into an executable file for Linux, Windows & Mac
-- Package your app into an executable file for iOS and Android.
-
-IMPORTANT: Angular 8.x CLI needs Node 10.9 or later to works correctly.
-
-## Getting Started
-
-You can check all the documentation on our official Read The Docs:
-[Read The Docs Angular-Multiplaform](https://angular-multiplatform.readthedocs.io/en/latest/)
-
-## Pending work / to-do features / known bugs
-There is no pending work!!! 🎉🎉🎉🎉🎉🎉
+WIP!!!
 
 
-## Contributors and copyrights
-This project forked [MaximeGris Angular-Electron](https://github.com/maximegris/angular-electron) for Windows/MacOS compile.
+Notes:
+
+Use this command to reach the package-level on npm scripts, so you can use built-in commands.
+
+
+npm explore com.d3sd1.angular.multiplaform -- npm run web:dev
+
+[...]

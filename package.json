@@ -1,7 +1,7 @@
 {
   "name": "com.d3sd1.angular.multiplaform",
   "displayName": "Angular Multiplaform",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Build angular for web, iOS, Android, Windows, MacOS and Linux.",
   "homepage": "https://www.andreigarciacuadra.es",
   "author": {
