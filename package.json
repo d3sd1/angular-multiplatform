@@ -1,7 +1,7 @@
 {
   "name": "com.d3sd1.angular.multiplaform",
   "displayName": "Angular Multiplaform",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Build angular for web, iOS, Android, Windows, MacOS and Linux.",
   "homepage": "https://www.andreigarciacuadra.es",
   "author": {
@@ -24,7 +24,7 @@
     "app-store"
   ],
   "main": "main.js",
-  "private": true,
+  "private": false,
   "scripts": {
     "web:dev": "ng serve -c web -o",
     "desktop:dev": "wait-on http-get://localhost:4200/ && npm run desktop:kernel:serve-tsc && electron . --serve",
@@ -46,9 +46,7 @@
     "cordova-android": "^8.1.0",
     "cordova-ios": "^5.1.1",
     "cordova-plugin-device": "2.0.3",
-    "net": "1.0.2"
-  },
-  "devDependencies": {
+    "net": "1.0.2",
     "@angular-builders/custom-webpack": "8.4.1",
     "@angular-devkit/build-angular": "0.803.22",
     "@angular-eslint/builder": "0.0.1-alpha.18",
