@@ -18,7 +18,8 @@ Notes:
 
 Use this command to reach the package-level on npm scripts, so you can use built-in commands.
 
-
+Requires NODE!
+npm install -g electron-builder
 npm explore com.d3sd1.angular.multiplaform -- npm run web:dev
 
 [...]
