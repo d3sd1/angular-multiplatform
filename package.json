@@ -1,7 +1,7 @@
 {
   "name": "angular-multiplatform",
   "displayName": "Angular Multiplaform",
-  "version": "0.0.74",
+  "version": "0.0.8",
   "description": "Build angular for web, iOS, Android, Windows, MacOS and Linux.",
   "homepage": "https://www.andreigarciacuadra.es",
   "author": {
@@ -37,7 +37,7 @@
     "store:build:ios": "npm run web:kernel:compile:prod && cordova build --release ios",
     "desktop:kernel:serve-tsc": "tsc -p tsconfig-serve.json",
     "desktop:kernel:compile:prod": "npm run desktop:kernel:serve-tsc && ng build --configuration=production",
-    "web:kernel:compile:prod": "node scripts/fixproject.js && cd $(node scripts/projectpath.js) && ng build --configuration=production --aot=true --prod --buildOptimizer=true --optimization=true --outputPath=./node_modules/angular-multiplatform/www && cd ./node_modules/angular-multiplatform",
+    "web:kernel:compile:prod": "",
     "postinstall": "electron-builder install-app-deps",
     "e2e": "npm run web:kernel:compile:prod && npm run desktop:kernel:compile:prod && mocha --timeout 300000 --require ts-node/register e2e/**/*.spec.ts",
     "version": "conventional-changelog -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md",
